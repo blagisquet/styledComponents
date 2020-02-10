@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+import Landing from './pages/Landing';
+import GlobalStyle from './theme/GlobalStyle';
 
 const App = () => {
   return (
-    <div>APP</div>
+    <div>
+      <GlobalStyle />
+      <Landing />
+      </div>
   )
 }
 
-export default App
+export default App;
