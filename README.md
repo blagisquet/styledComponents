@@ -1,3 +1,5 @@
+This project is an exercise to learn how to use styled components in React. (Not a personal project)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
