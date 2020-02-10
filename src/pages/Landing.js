@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import Banner from '../theme/Banner';
+import Header from '../components/Header/Header';
+import MainContent from '../components/MainContent/MainContent';
 
 const Landing = () => {
   return (
-    <div>
+    <Fragment>
       <Banner><span role='img' aria-label='Gratuit'>😍</span> Un domaine gratuit offert avec tous les hébergements !</Banner>
-    </div>
+      <Header />
+      <MainContent />
+    </Fragment>
   )
 }
 
