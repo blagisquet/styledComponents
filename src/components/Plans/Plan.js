@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { colors , pxToRem } from '../../theme/helpers';
+import Button from '../../theme/Button';
+
+import { darken } from 'polished';
 
 const Plan = ({ className, plan }) => {
   return (
@@ -16,6 +19,7 @@ const Plan = ({ className, plan }) => {
       <div className='command'>
         <p className='prix accent'>A partir de <span className='bolder'>{plan.price}€ / mois</span></p>
       </div>
+      <Button />
     </div>
   );
 }
@@ -41,7 +45,7 @@ export default styled(Plan)`
     border-top-right-radius: 4px;
   }
   .promo {
-    background: ${colors.accent};
+    background: ${darken(0.2, colors.primary)};
     margin: 0;
     font-size: ${pxToRem(16)};
     padding: ${pxToRem(8)};
