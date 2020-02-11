@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 import { layout, pxToRem, media } from '../../theme/helpers';
 
-const Feature = ({ className, feature }) => {
+const Feature = ({ className, feature, odd }) => {
   return (
     <div className={className}>
       <div className='content'>
         <h3>{feature.title}</h3>
         <p>{feature.text}</p>
       </div>
-      <img src={feature.img} alt={feature.title} />
+      <img className={odd ? 'odd' : ''} src={feature.img} alt={feature.title} />
     </div>
   )
 }
@@ -28,7 +28,7 @@ export default styled(Feature)`
   ${media.small`
     text-align: left;
     img {
-      max-height: 70vh;
+      max-height: 20vh;
     }
     display: flex;
     align-items: center;

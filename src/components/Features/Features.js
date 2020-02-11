@@ -6,7 +6,7 @@ import Feature from '../Feature/Feature';
 const Features = () => {
   return (
     <div>
-      { data.features.map(feature => <Feature key={feature.title} feature={feature}></Feature>)}
+      { data.features.map((feature, i) => <Feature key={feature.title} feature={feature} odd={i % 2 !== 0}></Feature>)}
     </div>
   )
 }
