@@ -3,11 +3,13 @@ import styled from 'styled-components';
 
 import { layout, pxToRem, media } from '../../theme/helpers';
 
+import Title from '../../theme/Title';
+
 const Feature = ({ className, feature, odd }) => {
   return (
     <div className={className}>
       <div className='content'>
-        <h3>{feature.title}</h3>
+        <Title>{feature.title}</Title>
         <p>{feature.text}</p>
       </div>
       <img className={odd ? 'odd' : ''} src={feature.img} alt={feature.title} />
