@@ -13,6 +13,8 @@ const Global = createGlobalStyle`
   body {
     font-size: 16px;
     transition: 600ms;
+    color: ${({ theme }) => theme.frontColor};
+    background: ${({ theme }) => theme.backgroundColor};
   }
 
   .bolder {
